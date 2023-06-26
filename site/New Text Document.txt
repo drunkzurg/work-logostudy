@@ -1,0 +1,97 @@
+
+.progress {
+	position: fixed;
+	top: 0em;
+	left: 0;
+	height: 2.5em;
+	background-color: beige;
+	// background-image: linear-gradient(90deg, 
+	// _palette(accent7) 14vw,  
+	// _palette(accent2) 14vw, _palette(accent2) 30vw, 
+	// _palette(accent4) 30vw, _palette(accent4) 46vw, 
+	// _palette(accent6) 46vw, _palette(accent6) 60vw, 
+	// _palette(accent5) 60vw, _palette(accent5) 76vw);
+	transition: all linear 0.1s;
+	min-width: 1%;
+	z-index: 100;
+	// border-radius: 0 0 0.5em 0 ;
+	}
+
+
+.test{
+    background-color: red;
+    border-radius: 5em;
+    height: 3em;
+    position: fixed;
+    width: 3em;
+    z-index: 2;
+}
+.wrapper{
+    &#one{
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    // -webkit-scroll-snap-type: y mandatory;
+    // -ms-scroll-snap-type: y mandatory;
+    //     scroll-snap-type: y mandatory;
+    }
+    &#two{
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    // -webkit-scroll-snap-type: x mandatory;
+    // -ms-scroll-snap-type: x mandatory;
+    //     scroll-snap-type: x mandatory;
+    }
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.port{
+        min-height: 100vh;
+        width: 100%;
+        // scroll-snap-align: start;
+        &:nth-child(2n+1){
+            background-color: #86a583a0;
+        }
+        &:nth-child(2n){
+            background-color: #bb262679;
+        }
+    }
+    &.land{
+        height: 100%;
+        min-width: 100vw;
+        display: flex;
+        // scroll-snap-align: start;
+        &:nth-child(2n+1){
+            background-color: #0040ff4d;
+        }
+        &:nth-child(2n){
+            background-color: #9eca2598;
+
+        }
+    }
+    & .pop{
+        color: whitesmoke;
+        font-size: 2.5em;
+        font-family: 'Roboto Slab';
+        height: auto;
+        max-width: 50%;
+        position: relative;
+        align-self: center;
+        // top: 10%;
+    }
+}
+

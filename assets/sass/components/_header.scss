@@ -1,0 +1,107 @@
+header{
+    min-height: 3em;
+    height: 100px;
+    max-height: 50px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    font-size: 1.6em;
+
+    #logo{
+        padding-left: 2em;
+        height: 100%;
+        display: flex;
+        opacity: 1;
+        svg {
+        padding-top: 5px;
+        display: inline-block;
+        min-height: 90px;
+        height: 6.5em;
+        max-height: 300px;
+            #path-iw{
+            fill: none;
+            box-sizing: border-box;
+            stroke-width: 300px;
+            stroke-linecap: round;
+            stroke-dasharray: 4037;
+            stroke-dashoffset: 4037;
+            -webkit-animation: a cubic-bezier(.445,.05,.55,.95) 1;
+            animation: a cubic-bezier(.445,.05,.55,.95) 1;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+            -webkit-animation-delay: .5s;
+            animation-delay: .6s;
+            }
+            #path-ir{    
+            stroke-width: 250px;  
+            stroke-linecap: butt;    
+            stroke-dasharray: 4037;
+            stroke-dashoffset: 4037;
+            -webkit-animation: a cubic-bezier(.445,.05,.55,.95) 1;
+            animation: a cubic-bezier(.445,.05,.55,.95) 1;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+            -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+            }
+            #path-f{
+            stroke: #fff;
+            stroke-linejoin:round;
+            box-sizing: border-box;
+            stroke-width: 350px;
+            stroke-linecap: round;
+            stroke-dasharray: 3767;
+            stroke-dashoffset: 3767;
+            -webkit-animation: a cubic-bezier(.445,.05,.55,.95) 1;
+            animation: a cubic-bezier(.445,.05,.55,.95) 1;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+            -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+            }
+        }
+    }
+    nav{
+    top: 0;
+    text-align: center;
+    // padding-left: 3em;
+        ul{
+            white-space: nowrap;
+            list-style-type: none;
+            max-width: 375px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            li{
+                padding-left: 3em;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@keyframes a {
+    0% {
+        stroke-dashoffset: 3567.53;
+    }
+
+    45% {
+        stroke-dashoffset: 529;
+    }
+    55% {
+        stroke-dashoffset: 529;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        // fill: #fff;
+    }
+}

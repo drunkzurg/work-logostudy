@@ -1,0 +1,63 @@
+// img{
+//     // border: 4px dashed #ae6530;
+// }
+#one{
+    z-index: -1;
+    display: block;
+    .wrapper{
+        position:relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        section{
+            display: flex;
+            height: 100vh;
+            justify-content:center;
+            align-items:center;
+            // border: 2px dashed white;
+            background-image: url('/assets/images/texture/concrete-wall-3.png');
+            background-attachment: fixed;
+            background-repeat: repeat;
+            overflow: hidden;
+            .pop{
+                font-size: 2em;
+                min-width: 50%;
+                // border: 2px dotted white;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                box-sizing: border-box;         /* Opera/IE 8+ */
+                &.left{
+                    flex-direction: column;
+                    padding: 3em;
+                    height: 100%;
+                    ul{
+                        list-style-type: none;
+                        height: 6em;
+                        overflow: auto;
+                        li{
+                            height: 100%;
+                        }
+                    }
+                }
+                &.right{
+                    flex-direction: row;
+                    height: 100%; 
+                    padding: 1em;
+                img{
+                    max-height: 100%;
+                    max-width: 100%;
+                    -webkit-filter: drop-shadow(5px 5px 5px #222222);
+                    filter: drop-shadow(0px 40px 25px #22222296);
+                }
+                }
+            }
+        }
+
+    }
+}
+
+

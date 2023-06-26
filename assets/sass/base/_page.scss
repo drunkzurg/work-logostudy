@@ -1,0 +1,13 @@
+#fore{
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: #ffffff55;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility:hidden;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
